@@ -1,7 +1,7 @@
 DGSource("Terminator.2.1991.2160p.BDREMUX.HDR.DATPHYR.dgi")
 Crop(0,280,0,-280)
 ConvertToPlanarRGB()
-DGCube(".cube\_current.cube", in="full", out="full", lut="full")
+DGCube("CUBE\_current.cube", in="full", out="full", lut="full")
 libplacebo_Tonemap(src_max=100,tone_mapping_function="bt2390",src_csp=0,dst_csp=1)
 libplacebo_Tonemap(dst_max=100,tone_mapping_function="bt2390")
 ConvertToYUV444()
