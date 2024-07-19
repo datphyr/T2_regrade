@@ -10,7 +10,7 @@ Import("plugins\GrainFactory3.avsi")
 DGSource("Terminator.2.1991.2160p.BDREMUX.HDR.DATPHYR.dgi").Crop(0,280,0,-280)
 
 # apply lut, planar rgb is required
-ConvertToPlanarRGB().DGCube("CUBE\T2_HDR_to_original.cube", in="full", out="full", lut="full")
+ConvertToPlanarRGB().DGCube("CUBE\T2_HDR_to_original.cube",in="full",out="full",lut="full")
 
 # retonemap (to hdr and back to sdr)
 libplacebo_Tonemap(src_max=100,tone_mapping_function="bt2390",src_csp=0,dst_csp=1)
