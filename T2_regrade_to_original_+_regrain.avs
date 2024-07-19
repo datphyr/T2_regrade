@@ -5,7 +5,7 @@ LoadPlugin("plugins\AddGrainC.dll")
 LoadPlugin("plugins\masktools2.dll")
 Import("plugins\GrainFactory3.avsi")
 
-# load source and  crop it
+# load source and crop it
 DGSource("Terminator.2.1991.2160p.BDREMUX.HDR.DATPHYR.dgi").Crop(0,280,0,-280)
 
 # apply lut, planar rgb is required
